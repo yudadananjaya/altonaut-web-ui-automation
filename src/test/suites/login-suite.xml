@@ -1,0 +1,7 @@
+<suite name="Login Test Suite">
+    <test name="Login Tests">
+        <classes>
+            <class name="com.altonaut.tests.login.LoginTest"/>
+        </classes>
+    </test>
+</suite>

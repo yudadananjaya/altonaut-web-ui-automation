@@ -1,0 +1,7 @@
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/base/BaseTest.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/config/Config.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/function/altonautWeb.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/modules/login/actions/LoginActions.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/modules/login/assertions/LoginAssertions.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/modules/login/locators/LoginLocators.java
+/Users/yuda/Documents/project-java/altonaut-web-ui-automation/src/main/java/com/altonaut/modules/login/pageActions/LoginPageActions.java
