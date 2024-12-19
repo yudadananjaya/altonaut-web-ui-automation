@@ -9,8 +9,6 @@ import com.altonaut.modules.login.locators.LoginLocators;
 
 public class LoginActions {
 
-    
-
     public static void fillUsername(WebDriver driver, String username) {
         altonautWeb.waitForElementVisible(driver, By.xpath(LoginLocators.USERNAME_FIELD));
         WebElement usernameField = driver.findElement(By.xpath(LoginLocators.USERNAME_FIELD));

@@ -5,12 +5,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import java.io.IOException;
+
+import com.altonaut.modules.login.pageActions.LoginPageActions;
+import com.altonaut.modules.login.assertions.LoginAssertions;
 import com.altonaut.config.Config;
 
-public class BaseTest {
+public class LoginBaseTest {
     protected WebDriver driver;
+    protected LoginPageActions loginPageActions;
+    protected LoginAssertions loginAssertions;
 
-    public void setUp() {
+    public void setUp() throws IOException{
         // Fetch browser type and base URL from Config
         String browser = Config.BROWSER;
         String baseUrl = Config.BASE_URL;
@@ -29,6 +36,9 @@ public class BaseTest {
         // Maximize browser window and navigate to base URL
         driver.manage().window().maximize();
         driver.get(baseUrl);
+
+        loginPageActions = new LoginPageActions();
+        loginAssertions = new LoginAssertions();
     }
 
     public void tearDown() {

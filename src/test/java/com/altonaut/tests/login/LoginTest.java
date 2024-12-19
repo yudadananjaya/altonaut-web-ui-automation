@@ -1,25 +1,18 @@
 package com.altonaut.tests.login;
 
-import com.altonaut.base.BaseTest;
-import com.altonaut.modules.login.assertions.LoginAssertions;
-import com.altonaut.modules.login.pageActions.LoginPageActions;
+import com.altonaut.base.LoginBaseTest;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-public class LoginTest extends BaseTest {
-
-    private LoginPageActions loginPageActions;
-    private LoginAssertions loginAssertions;
+public class LoginTest extends LoginBaseTest {
 
     @BeforeMethod
     public void setUpTest() throws IOException {
         setUp();
-        loginPageActions = new LoginPageActions();
-        loginAssertions = new LoginAssertions();
     }
 
     @Test
