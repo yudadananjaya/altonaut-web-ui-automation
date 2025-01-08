@@ -1,8 +1,7 @@
-com/altonaut/base/LoginBaseTest.class
 com/altonaut/modules/login/pageActions/LoginPageActions.class
 com/altonaut/modules/login/assertions/LoginAssertions.class
 com/altonaut/modules/login/locators/LoginLocators.class
 com/altonaut/function/altonautWeb.class
+com/altonaut/base/BaseTest.class
 com/altonaut/config/Config.class
 com/altonaut/modules/login/actions/LoginActions.class
-com/altonaut/base/ProfileBaseTest.class

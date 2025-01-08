@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-19T11:47:33 WIB" name="Surefire suite" finished-at="2024-12-19T11:47:51 WIB" duration-ms="17780">
+  <suite started-at="2025-01-08T16:35:14 WIB" name="Surefire suite" finished-at="2025-01-08T16:35:40 WIB" duration-ms="25560">
     <groups>
     </groups>
-    <test started-at="2024-12-19T11:47:33 WIB" name="Surefire test" finished-at="2024-12-19T11:47:51 WIB" duration-ms="17780">
+    <test started-at="2025-01-08T16:35:14 WIB" name="Surefire test" finished-at="2025-01-08T16:35:40 WIB" duration-ms="25560">
       <class name="com.altonaut.tests.login.LoginTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2024-12-19T11:47:33 WIB" name="setUpTest" finished-at="2024-12-19T11:47:47 WIB" duration-ms="13760" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:14 WIB" name="setUpTest" finished-at="2025-01-08T16:35:36 WIB" duration-ms="21631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="testLogin()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2024-12-19T11:47:47 WIB" name="testLogin" finished-at="2024-12-19T11:47:50 WIB" duration-ms="3442" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:36 WIB" name="testLogin" finished-at="2025-01-08T16:35:39 WIB" duration-ms="3458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2024-12-19T11:47:50 WIB" name="tearDownTest" finished-at="2024-12-19T11:47:51 WIB" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:39 WIB" name="tearDownTest" finished-at="2025-01-08T16:35:40 WIB" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
