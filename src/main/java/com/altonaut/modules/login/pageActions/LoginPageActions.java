@@ -3,7 +3,7 @@ package com.altonaut.modules.login.pageActions;
 import org.openqa.selenium.WebDriver;
 import com.altonaut.modules.login.actions.LoginActions;
 
-import com.altonaut.config.Config;
+import com.altonaut.global.GlobalVariables;
 
 public class LoginPageActions {
 
@@ -18,15 +18,15 @@ public class LoginPageActions {
         try {
             // Enter username
             LoginActions.fillUsername(driver, username);
-            Thread.sleep(Config.SHORT_DELAY_MS); // Delay for 1 second to wait for UI response
+            Thread.sleep(GlobalVariables.SHORT_DELAY_MS); // Delay for 1 second to wait for UI response
     
             // Enter password
             LoginActions.fillPassword(driver, password);
-            Thread.sleep(Config.SHORT_DELAY_MS); // Delay for 1 second to wait for UI response
+            Thread.sleep(GlobalVariables.SHORT_DELAY_MS); // Delay for 1 second to wait for UI response
     
             // Click login button
             LoginActions.clickLoginButton(driver);
-            Thread.sleep(Config.MEDIUM_DELAY_MS); // Delay for 15 seconds to allow the page to load
+            Thread.sleep(GlobalVariables.MEDIUM_DELAY_MS); // Delay for 15 seconds to allow the page to load
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
