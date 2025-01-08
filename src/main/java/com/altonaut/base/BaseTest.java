@@ -12,7 +12,7 @@ import com.altonaut.modules.login.pageActions.LoginPageActions;
 import com.altonaut.modules.login.assertions.LoginAssertions;
 import com.altonaut.config.Config;
 
-public class LoginBaseTest {
+public class BaseTest {
     protected WebDriver driver;
     protected LoginPageActions loginPageActions;
     protected LoginAssertions loginAssertions;
