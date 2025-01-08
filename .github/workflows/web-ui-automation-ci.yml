@@ -35,3 +35,9 @@ jobs:
 
     - name: Run tests with Maven
       run: mvn test
+    
+    - name: Parse test results
+      id: parse_results
+      run: |
+        TEST_RESULTS=$(mvn surefire-report:report-only | grep -E 'Tests run: [0-9]+, Failures: [0-9]+, Errors: [0-9]+, Skipped: [0-9]+')
+        echo "::set-output name=test_results::$TEST_RESULTS"
