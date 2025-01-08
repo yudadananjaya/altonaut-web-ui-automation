@@ -16,9 +16,16 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void testLogin() {
+    public void testLoginPass() {
         loginPageActions.performLogin(driver, "invalid_username", "invalid_pass");
         loginAssertions.assertLoginFailed(driver, "The user name and/or password that you have inputted is incorrect. Please make check and try again.");
+        System.out.println("Login test executed successfully.");
+    }
+
+    @Test
+    public void testLoginFail() {
+        loginPageActions.performLogin(driver, "invalid_username", "invalid_pass");
+        loginAssertions.assertLoginFailed(driver, "test failed assertion");
         System.out.println("Login test executed successfully.");
     }
 

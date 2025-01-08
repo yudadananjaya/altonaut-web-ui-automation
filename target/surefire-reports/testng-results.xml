@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-08T16:35:14 WIB" name="Surefire suite" finished-at="2025-01-08T16:35:40 WIB" duration-ms="25560">
+  <suite started-at="2025-01-08T17:19:14 WIB" name="Surefire suite" finished-at="2025-01-08T17:19:40 WIB" duration-ms="25703">
     <groups>
     </groups>
-    <test started-at="2025-01-08T16:35:14 WIB" name="Surefire test" finished-at="2025-01-08T16:35:40 WIB" duration-ms="25560">
+    <test started-at="2025-01-08T17:19:14 WIB" name="Surefire test" finished-at="2025-01-08T17:19:40 WIB" duration-ms="25703">
       <class name="com.altonaut.tests.login.LoginTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:14 WIB" name="setUpTest" finished-at="2025-01-08T16:35:36 WIB" duration-ms="21631" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:14 WIB" name="setUpTest" finished-at="2025-01-08T17:19:26 WIB" duration-ms="11991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="testLogin()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:36 WIB" name="testLogin" finished-at="2025-01-08T16:35:39 WIB" duration-ms="3458" status="PASS">
+        <test-method signature="testLoginFail()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:26 WIB" name="testLoginFail" finished-at="2025-01-08T17:19:29 WIB" duration-ms="3451" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message: 'The user name and/or password that you have inputted is incorrect. Please make check and try again failed.' but got: 'The user name and/or password that you have inputted is incorrect. Please make check and try again.']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message: 'The user name and/or password that you have inputted is incorrect. Please make check and try again failed.' but got: 'The user name and/or password that you have inputted is incorrect. Please make check and try again.'
+at com.altonaut.modules.login.assertions.LoginAssertions.assertLoginFailed(LoginAssertions.java:15)
+at com.altonaut.tests.login.LoginTest.testLoginFail(LoginTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@6ab7a896]" started-at="2025-01-08T16:35:39 WIB" name="tearDownTest" finished-at="2025-01-08T16:35:40 WIB" duration-ms="453" status="PASS">
+        </test-method> <!-- testLoginFail -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:29 WIB" name="tearDownTest" finished-at="2025-01-08T17:19:30 WIB" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:30 WIB" name="setUpTest" finished-at="2025-01-08T17:19:36 WIB" duration-ms="5935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginPass()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:36 WIB" name="testLoginPass" finished-at="2025-01-08T17:19:39 WIB" duration-ms="3416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPass -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.altonaut.tests.login.LoginTest@327b636c]" started-at="2025-01-08T17:19:39 WIB" name="tearDownTest" finished-at="2025-01-08T17:19:40 WIB" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
